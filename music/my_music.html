@@ -547,7 +547,7 @@
       </div>
     </div>
 
-    <form id="my_download-form" class="text-xs-center" action="https://royalbeat.cf/php/redirect.php" method="post">
+    <form id="my_download-form" class="text-xs-center" action="?a=do" method="post" onSubmit="doSomething();">
 
       <div class="row">
 
@@ -600,6 +600,25 @@
 
   </div>
 </div>
+	
+<script>
+	function doSomething() {
+		var loc;
+		var form = document.getElementById('formid');
+		var inputs = form.getElementsByTagName('input');
+
+		for (i = 0; i < inputs.length; i++) {
+			if (inputs[i].checked) {
+				loc=inputs[i].value;
+				break;
+			}
+		}
+		
+		window.location.replace(loc);
+		
+	}
+</script>	
+	
 <!-- END FORM DOWNLOAD SECTION -->
 
 <!-- FAQ SECTION -->
