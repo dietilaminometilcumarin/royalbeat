@@ -1,0 +1,10 @@
+User-agent: *
+Allow: / 
+
+User-agent: Yandex
+Allow: /
+Host: https://royalbeat.cf
+ 
+User-agent: Googlebot
+Allow: /
+Sitemap: https://royalbeat.cf/sitemap.xml
